@@ -1,0 +1,47 @@
+.valueBox {
+  width: 180px;
+  /* height: 200px; */
+  box-shadow: 0px 0px 5px 1px black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  background: linear-gradient(
+    to bottom,
+    rgba(66, 66, 66, 0.9),
+    rgba(12, 12, 12, 1)
+  );
+  cursor: default;
+}
+.valueBox:hover {
+  box-shadow: 0px 0px 10px 2px black;
+}
+.valueBoxBar {
+  width: 90px;
+  height: 3px;
+  background-color: #48ee9b;
+  border-radius: 10px;
+}
+.valueBoxTitle {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+}
+.valueBoxContent {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  text-align: justify;
+}
