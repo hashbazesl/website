@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fb80bed2.css",
+    "main.js": "/static/js/main.d0156a1d.js",
+    "static/js/787.8037f1a0.chunk.js": "/static/js/787.8037f1a0.chunk.js",
+    "static/media/techstack-back.png": "/static/media/techstack-back.ff247a68810101e34c69.png",
+    "static/media/who-we-are-back.png": "/static/media/who-we-are-back.b0a8ccb16242aa8952e8.png",
+    "static/media/aboutus-back.png": "/static/media/aboutus-back.d42cf2f1aeb283500c1a.png",
+    "static/media/map-back.png": "/static/media/map-back.ac22f260c4b14c6cae10.png",
+    "static/media/services-back.png": "/static/media/services-back.b06b4b302e426ae18cf1.png",
+    "static/media/our-values-back.png": "/static/media/our-values-back.b3cd93b4dae3cb40ead6.png",
+    "static/media/logo.png": "/static/media/logo.b23727664057f387bc68.png",
+    "static/media/home-3.jpg": "/static/media/home-3.b7db949ff9def2b828f8.jpg",
+    "static/media/ai-service.jpg": "/static/media/ai-service.8e569afb5c044f4c85dc.jpg",
+    "static/media/projects-back.png": "/static/media/projects-back.1a485954664550f20d91.png",
+    "static/media/home-2.jpg": "/static/media/home-2.e5b6bb1857302d89da67.jpg",
+    "static/media/loading-left-back.png": "/static/media/loading-left-back.aeb9b4feac3c344d4488.png",
+    "static/media/fitness-app.png": "/static/media/fitness-app.08f626dc56aa836f3515.png",
+    "static/media/loading-right-back.png": "/static/media/loading-right-back.05abb5990895dedb33c2.png",
+    "static/media/familife-app.png": "/static/media/familife-app.71a4eda40e4507563175.png",
+    "static/media/law-app.png": "/static/media/law-app.f65ced5195dc8fa74596.png",
+    "static/media/home-1.jpg": "/static/media/home-1.21ccb1baf291c8ae0a9c.jpg",
+    "static/media/perks-app.png": "/static/media/perks-app.2ece425a924ab0b62cb4.png",
+    "static/media/app-service.jpg": "/static/media/app-service.773b22721c4d4e58e4d0.jpg",
+    "static/media/blockchain-service.jpg": "/static/media/blockchain-service.44b88960e25dccbc7b03.jpg",
+    "static/media/faq-back.png": "/static/media/faq-back.b84997b93998f330f66c.png",
+    "static/media/pp-app.png": "/static/media/pp-app.ef1367061f1d9c89b623.png",
+    "static/media/cloud-service.jpg": "/static/media/cloud-service.c36d9af34831a9650292.jpg",
+    "static/media/blue-noise.png": "/static/media/blue-noise.94e262a843ef84470ca9.png",
+    "static/media/title-section-back.png": "/static/media/title-section-back.ae2746115245036a44e0.png",
+    "index.html": "/index.html",
+    "main.fb80bed2.css.map": "/static/css/main.fb80bed2.css.map",
+    "main.d0156a1d.js.map": "/static/js/main.d0156a1d.js.map",
+    "787.8037f1a0.chunk.js.map": "/static/js/787.8037f1a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb80bed2.css",
+    "static/js/main.d0156a1d.js"
+  ]
+}
