@@ -20,6 +20,7 @@ import Familife from "../../assets/images/familife-app.png";
 import Fitness from "../../assets/images/fitness-app.png";
 import Law from "../../assets/images/law-app.png";
 import PersonPilot from "../../assets/images/pp-app.png";
+import { useNavigate } from "react-router-dom";
 
 const Projects = ({ changeWindow }) => {
   const totalProjectCount = content.projects.length;
@@ -33,6 +34,9 @@ const Projects = ({ changeWindow }) => {
 
   const hasWindow = typeof window !== "undefined";
   const [imageLoaded, setImageLoaded] = useState(false);
+
+  const navigate = useNavigate();
+
   var items = [
     ProjectsBackImage,
     ProjectsBarBack,
@@ -230,6 +234,7 @@ const Projects = ({ changeWindow }) => {
         onExited={() => {
           setDisplayWindow(false);
           changeWindow(1);
+          navigate("/home");
         }}
       >
         {displayWindow || displayTitle ? (

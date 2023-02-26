@@ -14,6 +14,7 @@ import Snowfall from "react-snowfall";
 import HomeImg1 from "../../assets/images/home-1.jpg";
 import HomeImg2 from "../../assets/images/home-2.jpg";
 import HomeImg3 from "../../assets/images/home-3.jpg";
+import { useNavigate } from "react-router-dom";
 
 const TwoDLandingPage = ({ changeWindow, windowState }) => {
   let mottoArray = content.mottoText;
@@ -24,6 +25,8 @@ const TwoDLandingPage = ({ changeWindow, windowState }) => {
   const [loadNavBar, setLoadNavBar] = useState(false);
   const [visibleNavBar, setVisibleNavBar] = useState(false);
   const [windowIndex, setWindowIndex] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -86,7 +89,17 @@ const TwoDLandingPage = ({ changeWindow, windowState }) => {
                 unload2DWindow(2);
               }}
             >
-              <RiTeamFill color="#5ffff1" size="1.7em" />
+              {/* <RiTeamFill color="#5ffff1" size="1.7em" /> */}
+              <h2
+                style={{
+                  color: "white",
+                  fontSize: "0.6em",
+                  color: "#5ffff1",
+                  // fontWeight:"700"
+                }}
+              >
+                ABOUT
+              </h2>
             </div>
             <div
               className="bottomNavbar-icon"
@@ -94,14 +107,26 @@ const TwoDLandingPage = ({ changeWindow, windowState }) => {
                 unload2DWindow(4);
               }}
             >
-              <MdComputer color="#5ffff1" size="1.7em" />
+              {/* <MdComputer color="#5ffff1" size="1.7em" /> */}
+              <h2
+                style={{
+                  color: "white",
+                  fontSize: "0.6em",
+                  color: "#5ffff1",
+                  // fontWeight:"700"
+                }}
+              >
+                PROJECTS
+              </h2>
             </div>
 
             <img
               alt=""
               className="circle"
               src={Logo}
-              onClick={() => unload2DWindow(0)}
+              onClick={() => {
+                unload2DWindow(0);
+              }}
             ></img>
             <div
               className="bottomNavbar-icon"
@@ -109,7 +134,16 @@ const TwoDLandingPage = ({ changeWindow, windowState }) => {
                 unload2DWindow(3);
               }}
             >
-              <RiArticleFill color="#5ffff1" size="1.7em" />
+              {/* <RiArticleFill color="#5ffff1" size="1.7em" /> */}
+              <h2
+                style={{
+                  color: "white",
+                  fontSize: "0.6em",
+                  color: "#5ffff1",
+                }}
+              >
+                BLOG
+              </h2>
             </div>
             <div
               className="bottomNavbar-icon"
@@ -117,7 +151,16 @@ const TwoDLandingPage = ({ changeWindow, windowState }) => {
                 unload2DWindow(5);
               }}
             >
-              <MdQuestionAnswer color="#5ffff1" size="1.7em" />
+              {/* <MdQuestionAnswer color="#5ffff1" size="1.7em" /> */}
+              <h2
+                style={{
+                  color: "white",
+                  fontSize: "0.6em",
+                  color: "#5ffff1",
+                }}
+              >
+                FAQ
+              </h2>
             </div>
           </div>
         ) : (
@@ -136,6 +179,17 @@ const TwoDLandingPage = ({ changeWindow, windowState }) => {
         onExited={() => {
           setVisiblePane(false);
           changeWindow(windowIndex);
+          if (windowIndex == 0) {
+            navigate("/");
+          } else if (windowIndex == 2) {
+            navigate("/aboutus");
+          } else if (windowIndex == 4) {
+            navigate("/projects");
+          } else if (windowIndex == 3) {
+            navigate("/blog");
+          } else if (windowIndex == 5) {
+            navigate("/faq");
+          }
         }}
       >
         {visiblePane ? (
@@ -188,8 +242,14 @@ const TwoDLandingPage = ({ changeWindow, windowState }) => {
           <div className="container-rightOrDown">
             <Snowfall />
             <h2 className="landingRightText">
-              LIVE THE <span style={{ color: "#00f760", fontWeight:"700" }}>EXPERIENCE</span> CONNECT WITH{" "}
-              <span style={{ color: "#FFDB1E" ,fontWeight:"700"}}>HashBaze</span>
+              LIVE THE{" "}
+              <span style={{ color: "#00f760", fontWeight: "700" }}>
+                EXPERIENCE
+              </span>{" "}
+              CONNECT WITH{" "}
+              <span style={{ color: "#FFDB1E", fontWeight: "700" }}>
+                HashBaze
+              </span>
             </h2>
             {/* <h2>From <span>HashBaze</span> Team</h2> */}
             {/* <h2 className="topic-rightOrDown">New on Platform</h2> */}

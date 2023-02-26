@@ -15,6 +15,8 @@ import {
   Marker,
 } from "react-simple-maps";
 
+import { useNavigate } from "react-router-dom";
+
 import { Carousel } from "react-responsive-carousel";
 
 import TechCard from "./techCard";
@@ -57,7 +59,7 @@ const AboutUs = ({ changeWindow }) => {
     CloudService,
     AiService,
   ];
-
+  const navigate = useNavigate();
   const geoUrl =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries-sans-antarctica.json";
   function loader(items, thingToDo, allDone) {
@@ -142,7 +144,7 @@ const AboutUs = ({ changeWindow }) => {
         onExited={() => {
           setDisplayWindow(false);
           changeWindow(1);
-
+          navigate("/home");
         }}
       >
         {displayWindow || displayTitle ? (

@@ -10,6 +10,7 @@ import FAQBackImage from "../../assets/images/faq-back.png";
 import FAQMainBackImage from "../../assets/images/projects-back.png";
 
 import "./contactUs.css";
+import { useNavigate } from "react-router-dom";
 
 const ContactUs = ({ changeWindow }) => {
   const [displayFlash, setDisplayFlash] = useState(0);
@@ -17,6 +18,8 @@ const ContactUs = ({ changeWindow }) => {
   const [displayTitle, setDisplayTitle] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   var items = [TitleSectionBackImage, FAQBackImage, FAQMainBackImage];
+
+  const navigate = useNavigate();
 
   function loader(items, thingToDo, allDone) {
     if (!items) {
@@ -158,6 +161,7 @@ const ContactUs = ({ changeWindow }) => {
         onExited={() => {
           setDisplayWindow(false);
           changeWindow(1);
+          navigate("/home");
         }}
       >
         {displayWindow || displayTitle ? (

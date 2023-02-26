@@ -2,11 +2,15 @@ import React, { Suspense, lazy } from "react";
 import { TypeAnimation } from "react-type-animation";
 import Logo from "../../assets/images/logo.png";
 import "./landing.css";
+import { useNavigate } from "react-router-dom";
 
 const ThreeDLandingPage = ({ changeWindow }) => {
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  const navigate = useNavigate();
+
   return (
     <div className="base-landing-background">
       <h1 className="base-landing-title">HashBaze</h1>
@@ -17,6 +21,7 @@ const ThreeDLandingPage = ({ changeWindow }) => {
         src={Logo}
         onClick={() => {
           changeWindow(1);
+          navigate("/home")
         }}
       />
       <h1 className="base-landing-subtitle">"A SYMBOL TO LEAD ALL"</h1>

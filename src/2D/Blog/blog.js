@@ -7,6 +7,7 @@ import { CSSTransition } from "react-transition-group";
 import TitleSectionBackImage from "../../assets/images/title-section-back.png";
 import content from "../../utils/content/blog.js";
 import FlashScreen from "../FlashScreen/flashScreen";
+import { useNavigate } from "react-router-dom";
 
 const Blog = ({ changeWindow }) => {
   const [displayFlash, setDisplayFlash] = useState(0);
@@ -15,7 +16,7 @@ const Blog = ({ changeWindow }) => {
 
   const [imageLoaded, setImageLoaded] = useState(false);
   var items = [TitleSectionBackImage];
-
+  const navigate = useNavigate();
   function loader(items, thingToDo, allDone) {
     if (!items) {
       // nothing to do.
@@ -89,6 +90,7 @@ const Blog = ({ changeWindow }) => {
           onExited={() => {
             setDisplayWindow(false);
             changeWindow(1);
+            navigate("/home");
           }}
         >
           {displayWindow || displayTitle ? (
